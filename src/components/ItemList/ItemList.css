@@ -1,0 +1,27 @@
+.block {
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 860px;
+    justify-content: space-between;
+}
+
+.block__item {
+    height: 150px;
+    padding: 10px 3px;
+}
+
+@media (max-width: 570px) {
+    .block__item {
+        height: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .block {
+        min-width: 320px;
+    }
+    
+    .block__item {
+        height: 80px;
+    }
+}
